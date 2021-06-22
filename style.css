@@ -21,9 +21,9 @@ main {
 .hike slide,
 .fashion slide,
 .hero-img img {
-  width: 550px;
+  width: 500px;
   height: 430px;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 /* .fashion1 detail-slide,
@@ -76,6 +76,7 @@ a {
 }
 
 .slide {
+  position: relative;
   min-height: 100vh;
   margin: 0 auto 0 auto;
   width: 80%;
@@ -353,4 +354,127 @@ body.hide {
 .swipe3 {
   background: rgb(255, 139, 93);
   z-index: 3;
+}
+
+/* media quary */
+
+@media screen and (max-width: 1500px) {
+  .hero-img {
+    height: 50vh;
+  }
+  .fashion-text h1 {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+  }
+  .fashion-text p {
+    font-size: 1rem;
+  }
+  .fashion-img img {
+    height: 50vh;
+    object-position: top;
+  }
+}
+
+@media (max-width: 786px) {
+  body {
+    width: 100%;
+  }
+  main {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+  }
+  .slide {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .mountain,
+  .hike,
+  .fashion,
+  .hero-desc {
+    width: 100%;
+    padding: 0;
+    height: 200px;
+  }
+  .hero-img {
+    padding-top: 0;
+    flex-basis: 25rem;
+    height: 350px;
+  }
+  .hero-img img {
+    height: 350px;
+  }
+  .hero-desc h2 {
+    font-size: 1.4rem;
+    padding: 1rem 0rem;
+    margin-top: 1rem;
+  }
+  .hero-desc p {
+    padding: 1.5rem 0.7rem;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    text-align: center;
+  }
+  .explore {
+    width: 60%;
+    margin: auto;
+  }
+  .detail-slide {
+    width: 100%;
+    text-align: center;
+  }
+  .fashion-text p {
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+  }
+  .fashion-text h1 {
+    margin: 0rem 0rem;
+  }
+  .nav-bar {
+    width: 50%;
+    background: white;
+    display: block;
+  }
+  .fab-icon {
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+  }
+  .nav-links {
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 0.2rem;
+    margin-top: 4rem;
+    padding: 0;
+  }
+  .nav-links h3 {
+    padding: 2rem 0rem;
+  }
+  .contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .contact p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .fashion1,
+  .fashion2,
+  .fashion3 {
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .fashion-img {
+    flex-basis: 30rem;
+    height: 600px;
+  }
+  .fashion-img img {
+    width: 415px;
+  }
 }
